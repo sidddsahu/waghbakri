@@ -1,3 +1,7 @@
 .banner-area{
     background-color: #ED6F28 !important;
 }
+
+.testimonials-area > p{
+    color: white !important;
+}
