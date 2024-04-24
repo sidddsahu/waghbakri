@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,71 +9,95 @@
     <meta name="robots" content="noindex, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons.png">
     <!-- all css here -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/meanmenu.min.css">
     <link rel="stylesheet" href="assets/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
 
     <style>
+        .menu-overflow li a {
+            color: black !important;
 
-
-.menu-overflow li a{
-    color: black !important;
-
-}
-
-@media(max-width: 480px) {
-    .swiper {
-        margin: 0 !important;
-            width: 100% !important;
-            height: 50vh !important;
         }
 
-}
+        @media(max-width: 480px) {
+            .swiper {
+                margin: 0 !important;
+                width: 100% !important;
+                height: 50vh !important;
+                border-radius: 0 !important;
+            }
 
-
-@media (max-width: 767px) {
-    .product-area {
-        padding:180px 0 0px 0px !important;
-    }
-
-    .swiper-slide p {
-            width: 80% !important;
         }
 
-        .swiper-slide h2 {
-            width: 80% !important;
+
+        @media (max-width: 767px) {
+            .product-area {
+                padding: 40px 0 0px 0px !important;
+            }
+
+            .swiper-slide p {
+                display: none;
+                width: 80% !important;
+            }
+
+            .swiper-slide h2 {
+                display: none;
+                width: 80% !important;
+            }
+
+            .swiper-slide span {
+                display: none;
+                width: 80% !important;
+            }
+
+            #mobile {
+                display: initial !important;
+                background-color: #F4C242 !important;
+
+            }
+
+            #desktop {
+                display: none;
+            }
+
         }
 
-}
+        #mobile {
+            display: none;
+            /* background-color: #FCAD08 !important; */
+
+        }
+
+        .logo {
+            margin: 0;
+        }
 
 
 
-.swiper-slide p {
+        .swiper-slide p {
             width: 50%;
         }
 
         .swiper-slide h2 {
             width: 50%;
         }
+
         .swiper {
             border-radius: 10px;
             margin-top: 1vmax;
@@ -90,10 +115,6 @@
             align-items: center;
         }
 
-
-
-
-
         .swiper-slide img {
             display: block;
             width: 100%;
@@ -104,34 +125,28 @@
 
         .header-area {
             background-color: #F4C242;
+            /* background-color: #da4b32; */
         }
 
         .footer-top {
-            background-color: #F4C242 !important;
+            background-color: #F4C242!important;
         }
-
-
 
 
         .footer-area {
-            background-color: #F4C242 !important;
+            background-color: #F4C242!important;
             /* color: white !important; */
         }
-/*
-        .footer-area li a{
-            font-weight: 500 !important;
-            color: white !important;
+
+        .footer-contact i{
+             padding: 7px;
+            border-radius: 20%;
+            background-color: rgb(225, 225, 225);
+            font-size: 1.5rem;
+            margin-right: .5vmax;
 
         }
 
-        .footer-area h4{
-            color: white !important;
-
-        }
-
-        .footer-area p{
-            color: white !important;
-        } */
 
         .header-area li a {
             color: black !important;
@@ -153,6 +168,7 @@
         }
 
 
+
         .testimonials-area h4,
         h5 {
             color: white;
@@ -165,15 +181,15 @@
 
 
     <!-- header start -->
-    <header class="header-area pb-3 gray-bg clearfix">
-        <div class="header-bottom">
+    <header style="background-color: #FCAD08 !important;" id="mobile" class="header-area pb-4 gray-bg clearfix">
+        <div style="background-color: #F4C242 !important;" class="header-bottom">
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-3 col-md-4 col-6">
                         <div class="logo">
                             <a href="index.html">
                                 <img height="80" style="margin-top: 0;" alt=""
-                                    src="assets/wagh-bakri-logo.png">
+                                    src="https://www.waghbakritea.com/images/wagh-bakri-logo.png">
                             </a>
                         </div>
                     </div>
@@ -189,6 +205,9 @@
                                         </li>
                                         <li class="top-hover"><a href="#">Infrastructure</a>
                                         </li>
+
+
+
                                         <li class="top-hover"><a href="#">CSR</a> </li>
                                         <li><a href="#">Creatives</a></li>
                                         <li><a href="#">contact</a></li>
@@ -287,42 +306,180 @@
     </header>
     <!-- header end -->
 
+    <!-- ------------Heder-desktop-------------- -->
+
+    <header id="desktop" class="header-area pb-3 gray-bg clearfix">
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <!-- <div class="col-lg-3 col-md-4 col-6"> -->
+
+                    <!-- </div> -->
+                    <div class="col-lg-12 col-md-8 col-6">
+                        <div class="">
+                            <div class="main-menu">
+                                <nav>
+                                    <ul style="display: flex; align-items: center;">
+                                        <li class="top-hover"><a href="index.html">Home</a>
+                                        </li>
+                                        <li><a href="">About-us</a></li>
+                                        <li class="mega-menu-position top-hover"><a href="#">Tea-brands</a>
+                                        </li>
+                                        <li class="top-hover"><a href="#">Infrastructure</a>
+                                        </li>
+
+                                        <div class="logo pe-5">
+                                            <a href="index.html">
+                                                <img height="100" style="margin-top: 0;" alt=""
+                                                    src="https://www.waghbakritea.com/images/wagh-bakri-logo.png">
+                                            </a>
+                                        </div>
+                                        <li class="top-hover"><a href="#">Media</a> </li>
+
+                                        <li class="top-hover"><a href="#">CSR</a> </li>
+                                        <li><a href="#">Creatives</a></li>
+                                        <li><a href="#">contact</a></li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- <div class="header-currency">
+									<span style="font-size: .8rem;" class="digit text-white">Rupees <i class="ti-angle-down"></i></span>
+									<div class="dollar-submenu">
+										<ul>
+											<li><a href="#">$ USD</a></li>
+											<li><a href="#">€ EUR</a></li>
+											<li><a href="#">£ GBP</a></li>
+											<li><a href="#">₹ INR</a></li>
+											<li><a href="#">¥ JPY</a></li>
+										</ul>
+									</div>
+								</div> -->
+                            <style>
+                                .cart-icon i {
+                                    color: white !important;
+                                }
+                            </style>
+                            <!-- <div class="header-cart">
+                                    <a href="#">
+                                        <div class="cart-icon">
+                                      <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                    <div class="shopping-cart-content">
+                                        <ul>
+                                            <li class="single-shopping-cart">
+                                                <div class="shopping-cart-img">
+                                               <a href="#"><img alt="" src="assets/img/cart/cart-1.jpg"></a>
+                                                </div>
+                                                <div class="shopping-cart-title">
+                                                    <h4><a href="#">Phantom Remote </a></h4>
+                                                    <h6>Qty: 02</h6>
+                                                    <span>$260.00</span>
+                                                </div>
+                                                <div class="shopping-cart-delete">
+                                                    <a href="#"><i class="ion ion-close"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="single-shopping-cart">
+                                                <div class="shopping-cart-img">
+                                                    <a href="#"><img alt="" src="assets/img/cart/cart-2.jpg"></a>
+                                                </div>
+                                                <div class="shopping-cart-title">
+                                                    <h4><a href="#">Phantom Remote</a></h4>
+                                                    <h6>Qty: 02</h6>
+                                                    <span>$260.00</span>
+                                                </div>
+                                                <div class="shopping-cart-delete">
+                                                    <a href="#"><i class="ion ion-close"></i></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="shopping-cart-total">
+                                            <h4>Shipping : <span>$20.00</span></h4>
+                                            <h4>Total : <span class="shop-total">$260.00</span></h4>
+                                        </div>
+                                        <div class="shopping-cart-btn">
+                                            <a href="cart-page.html">view cart</a>
+                                            <a href="checkout.html">checkout</a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-area">
+                    <div class="mobile-menu">
+                        <nav id="mobile-menu-active">
+                            <ul class="menu-overflow">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="#">About-us</a></li>
+                                <li><a href="#">Tea Brands</a></li>
+                                <li><a href="#">BLOG</a>
+                                    <ul>
+                                        <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                                        <li><a href="#">Infrastructure</a></li>
+                                        <li><a href="#">Csr</a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"> Contact us </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ------------Heder-desktop-------------- -->
+
 
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div style="background-image: url(https://images6.alphacoders.com/329/thumb-1920-329631.jpg); background-repeat: no-repeat; background-size: cover;" class="swiper-slide" class="swiper-slide">
+            <div style="background-image: url(https://images6.alphacoders.com/329/thumb-1920-329631.jpg); background-repeat: no-repeat; background-size: cover;"
+                class="swiper-slide" class="swiper-slide">
+                <div class="ps-5">
+                    <h2 style="text-align: left; text-shadow: 2px 2px 5px black; " class="text-white    ">Winner of the
+                        Forbes India Leadership Award 2024 for Regional Goliath</h2>
+                    <p style="text-align: left; text-shadow: 2px 2px 5px black; " class="text-white pt-3">Continuously
+                        demonstrating unwavering consistency, resilience, and leadership, establishing a dominant
+                        presence in the Indian tea industry</p>
+
+                </div>
+            </div>
+
+            <div style="background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/27/137700-tea-748x421.jpg); background-repeat: no-repeat; background-size: cover;"
+                class="swiper-slide">
                 <div>
-                    <h2 style="text-align: left; text-shadow: 2px 2px 5px black; " class="text-white  p">Winner of the Forbes India Leadership Award 2024 for Regional Goliath</h2>
-                    <p style="text-align: left; text-shadow: 2px 2px 5px black; " class="text-white pt-3">Continuously demonstrating unwavering consistency, resilience, and leadership, establishing a dominant presence in the Indian tea industry</p>
-
-                 </div>
+                    <h2 style="text-align: left; text-shadow: 2px 2px 5px black; " class="text-white p-3">The Wagh Bakri
+                        Group is led by 4th generation of Tea Tasters and Blenders, ensuring consistency & quality.</h2>
+                </div>
             </div>
 
-            <div style=" background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/27/137700-tea-748x421.jpg); background-repeat: no-repeat; background-size: cover;"
-            class="swiper-slide">
-            <div>
-               <h2 style="text-align: left; text-shadow: 2px 2px 5px black; " class="text-white  p-5">The Wagh Bakri Group is led by 4th generation of Tea Tasters and Blenders, ensuring consistency & quality.</h2>
-            </div>
-           </div>
-
-            <div style="background-image: url(https://images8.alphacoders.com/387/387276.jpg); background-repeat: no-repeat; background-size: cover;" class="swiper-slide">
+            <div style="background-image: url(https://images8.alphacoders.com/387/387276.jpg); background-repeat: no-repeat; background-size: cover;"
+                class="swiper-slide">
                 <div>
-                    <h2 style="text-align: left; text-shadow: 2px 2px 5px black; " class="text-white  p-5">Wagh Bakri Tea is being exported to 60+ countries worldwide.</h2>
+                    <h2 style="text-align: left; text-shadow: 2px 2px 5px black; " class="text-white  p-5">Wagh Bakri
+                        Tea is being exported to 60+ countries worldwide.</h2>
 
-                 </div>
+                </div>
             </div>
 
-            <div style="background-image: url(https://images7.alphacoders.com/925/thumb-1920-925582.jpg); background-repeat: no-repeat; background-size: cover;" class="swiper-slide">
+            <div style="background-image: url(https://images7.alphacoders.com/925/thumb-1920-925582.jpg); background-repeat: no-repeat; background-size: cover;"
+                class="swiper-slide">
                 <div style="display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end;">
-                    <h2 style=" text-shadow: 4px 4px 5px black; color: rgb(255, 255, 255); " class="   pb-0">Pioneered the concept of 5 Star Tea Lounges in India.
-                     </h2>
-                     <span style=" text-shadow: 4px 4px 5px rgb(0, 0, 0); color: rgb(255, 255, 255); " class="  p4-5"> Ahmedabad | Delhi NCR | Mumbai | Vadodara | Pune</span>
+                    <h2 style=" text-shadow: 4px 4px 5px black; color: rgb(255, 255, 255); " class="pb-0">Pioneered the
+                        concept of 5 Star Tea Lounges in India.
+                    </h2>
+                    <span style=" text-shadow: 4px 4px 5px rgb(0, 0, 0); color: rgb(255, 255, 255); " class="">
+                        Ahmedabad | Delhi NCR | Mumbai | Vadodara | Pune</span>
 
-                 </div>
+                </div>
             </div>
             <!-- <div class="swiper-slide"><img src="https://hdwallpaperim.com/wp-content/uploads/2017/08/27/137700-tea-748x421.jpg" alt=""></div> -->
-
-
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -330,35 +487,9 @@
     </div>
 
 
-
-    <!-- Slider Start -->
-    <!-- <div class="slider-area">
-        <div class="slider-active owl-dot-style owl-carousel">
-            <div class="single-slider ptb-240 bg-img" style="background-image:url(assets/img/slider/slider-1.jpg);">
-                <div class="container">
-                    <div class="slider-content slider-animated-1">
-                        <h1 class="animated">Want to stay <span class="theme-color">healthy</span></h1>
-                        <h1 class="animated">drink waghbakritea.</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetu adipisicing elit sedeiu tempor inci ut labore et
-                            dolore magna aliqua.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="single-slider ptb-240 bg-img" style="background-image:url(assets/img/slider/slider-1-1.jpg);">
-                <div class="container">
-                    <div class="slider-content slider-animated-1">
-                        <h1 class="animated">Want to stay <span class="theme-color">healthy</span></h1>
-                        <h1 class="animated">drink matcha.</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetu adipisicing elit sedeiu tempor inci ut labore et
-                            dolore magna aliqua.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <!-- Slider End -->
     <!-- Product Area Start -->
-    <div class="product-area bg-image-1 pt-100 ">
+    <div class="product-area bg-image-1 pt-5 pb-5 ">
         <div class="container">
             <div class="featured-product-active hot-flower owl-carousel product-nav">
                 <div class="product-wrapper">
@@ -370,14 +501,14 @@
                         <span>-20%</span>
                         <div class="product-action">
                             <a class="action-wishlist" href="#" title="Wishlist">
-                                <i class="ion-android-favorite-outline"></i>
+                                <i class="bi bi-heart"></i>
                             </a>
                             <a class="action-cart" href="#" title="Add To Cart">
-                                <i class="ion-ios-shuffle-strong"></i>
+                               <i class="bi bi-shuffle"></i>
                             </a>
                             <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal"
                                 title="Quick View">
-                                <i class="ion-ios-search-strong"></i>
+                                <i class="bi bi-cart"></i>
                             </a>
                         </div>
                     </div>
@@ -385,7 +516,7 @@
                         <div class="product-hover-style">
                             <div class="product-title">
                                 <h4>
-                                    <a href="">Nature Close Tea</a>
+                                    <a href="">Wagh-Bakri Tea</a>
                                 </h4>
                             </div>
                             <div class="cart-hover">
@@ -406,14 +537,14 @@
                         </a>
                         <div class="product-action">
                             <a class="action-wishlist" href="#" title="Wishlist">
-                                <i class="ion-android-favorite-outline"></i>
+                                <i class="bi bi-heart"></i>
                             </a>
                             <a class="action-cart" href="#" title="Add To Cart">
-                                <i class="ion-ios-shuffle-strong"></i>
+                               <i class="bi bi-shuffle"></i>
                             </a>
                             <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal"
                                 title="Quick View">
-                                <i class="ion-ios-search-strong"></i>
+                                <i class="bi bi-cart"></i>
                             </a>
                         </div>
                     </div>
@@ -421,7 +552,7 @@
                         <div class="product-hover-style">
                             <div class="product-title">
                                 <h4>
-                                    <a href="">Pink wave Cup</a>
+                                    <a href="">Wagh-Bakri Tea</a>
                                 </h4>
                             </div>
                             <div class="cart-hover">
@@ -442,14 +573,14 @@
                         <span>-50%</span>
                         <div class="product-action">
                             <a class="action-wishlist" href="#" title="Wishlist">
-                                <i class="ion-android-favorite-outline"></i>
+                                <i class="bi bi-heart"></i>
                             </a>
                             <a class="action-cart" href="#" title="Add To Cart">
-                                <i class="ion-ios-shuffle-strong"></i>
+                               <i class="bi bi-shuffle"></i>
                             </a>
                             <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal"
                                 title="Quick View">
-                                <i class="ion-ios-search-strong"></i>
+                                <i class="bi bi-cart"></i>
                             </a>
                         </div>
                     </div>
@@ -457,7 +588,7 @@
                         <div class="product-hover-style">
                             <div class="product-title">
                                 <h4>
-                                    <a href="">Tea and Chai</a>
+                                    <a href="">Tea and Chai </a>
                                 </h4>
                             </div>
                             <div class="cart-hover">
@@ -478,14 +609,14 @@
                         </a>
                         <div class="product-action">
                             <a class="action-wishlist" href="#" title="Wishlist">
-                                <i class="ion-android-favorite-outline"></i>
+                                <i class="bi bi-heart"></i>
                             </a>
                             <a class="action-cart" href="#" title="Add To Cart">
-                                <i class="ion-ios-shuffle-strong"></i>
+                               <i class="bi bi-shuffle"></i>
                             </a>
                             <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal"
                                 title="Quick View">
-                                <i class="ion-ios-search-strong"></i>
+                                <i class="bi bi-cart"></i>
                             </a>
                         </div>
                     </div>
@@ -493,7 +624,7 @@
                         <div class="product-hover-style">
                             <div class="product-title">
                                 <h4>
-                                    <a href="">Pearly Everlasting</a>
+                                    <a href="">Wagh-Bakri</a>
                                 </h4>
                             </div>
                             <div class="cart-hover">
@@ -506,22 +637,23 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="product-wrapper">
                     <div class="product-img">
                         <a href="">
-                            <img alt="" src="https://m.media-amazon.com/images/I/51VhGYHTeXL._AC_UF1000,1000_QL80_.jpg">
+                            <img alt="" src="https://m.media-amazon.com/images/I/5179GRsA5wL._AC_UF1000,1000_QL80_.jpg">
                         </a>
-                        <span>-30%</span>
+                        <span>-50%</span>
                         <div class="product-action">
                             <a class="action-wishlist" href="#" title="Wishlist">
-                                <i class="ion-android-favorite-outline"></i>
+                                <i class="bi bi-heart"></i>
                             </a>
                             <a class="action-cart" href="#" title="Add To Cart">
-                                <i class="ion-ios-shuffle-strong"></i>
+                               <i class="bi bi-shuffle"></i>
                             </a>
                             <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal"
                                 title="Quick View">
-                                <i class="ion-ios-search-strong"></i>
+                                <i class="bi bi-cart"></i>
                             </a>
                         </div>
                     </div>
@@ -529,7 +661,7 @@
                         <div class="product-hover-style">
                             <div class="product-title">
                                 <h4>
-                                    <a href="">Que herbal Tea</a>
+                                    <a href="">Tea and Chai </a>
                                 </h4>
                             </div>
                             <div class="cart-hover">
@@ -542,6 +674,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -586,7 +719,7 @@
     </div>
     <!-- Banner End -->
     <!-- New Products Start -->
-    <div class="product-area gray-bg pt-90 pb-65">
+    <div class="product-area gray-bg pt-90 ">
         <div class="container">
             <div class="product-top-bar section-border mb-55">
                 <div class="section-title-wrap text-center">
@@ -606,14 +739,14 @@
                                     <span>-30%</span>
                                     <div class="product-action">
                                         <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="ion-android-favorite-outline"></i>
+                                            <i class="bi bi-heart"></i>
                                         </a>
                                         <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="ion-ios-shuffle-strong"></i>
+                                           <i class="bi bi-shuffle"></i>
                                         </a>
                                         <a class="action-compare" href="#" data-bs-target="#exampleModal"
                                             data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-ios-search-strong"></i>
+                                            <i class="bi bi-cart"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -621,7 +754,7 @@
                                     <div class="product-hover-style">
                                         <div class="product-title">
                                             <h4>
-                                                <a href="">BeBe Bloom tea</a>
+                                                <a href="">Wagh Bakri Tea</a>
                                             </h4>
                                         </div>
                                         <div class="cart-hover">
@@ -634,352 +767,64 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-wrapper mb-30">
-                                <div class="product-img">
-                                    <a href="">
-                                        <img alt=""
-                                            src="https://5.imimg.com/data5/OP/KB/OB/SELLER-2327178/waghbakri-premium-leaf-tea.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="ion-android-favorite-outline"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="ion-ios-shuffle-strong"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal"
-                                            data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-ios-search-strong"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-left">
-                                    <div class="product-hover-style">
-                                        <div class="product-title">
-                                            <h4>
-                                                <a href="">BeBe Bloom tea</a>
-                                            </h4>
-                                        </div>
-                                        <div class="cart-hover">
-                                            <h4><a href="">+ Add to cart</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00 -</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-wrapper-single">
-                            <div class="product-wrapper mb-30">
-                                <div class="product-img">
-                                    <a href="">
-                                        <img alt=""
-                                            src="https://5.imimg.com/data5/OP/KB/OB/SELLER-2327178/waghbakri-premium-leaf-tea.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="ion-android-favorite-outline"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="ion-ios-shuffle-strong"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal"
-                                            data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-ios-search-strong"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-left">
-                                    <div class="product-hover-style">
-                                        <div class="product-title">
-                                            <h4>
-                                                <a href="">BeBe Bloom tea</a>
-                                            </h4>
-                                        </div>
-                                        <div class="cart-hover">
-                                            <h4><a href="">+ Add to cart</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00 -</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper mb-30">
-                                <div class="product-img">
-                                    <a href="">
-                                        <img alt=""
-                                            src="https://5.imimg.com/data5/OP/KB/OB/SELLER-2327178/waghbakri-premium-leaf-tea.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="ion-android-favorite-outline"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="ion-ios-shuffle-strong"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal"
-                                            data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-ios-search-strong"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-left">
-                                    <div class="product-hover-style">
-                                        <div class="product-title">
-                                            <h4>
-                                                <a href="">BeBe Bloom tea</a>
-                                            </h4>
-                                        </div>
-                                        <div class="cart-hover">
-                                            <h4><a href="">+ Add to cart</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00 -</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-wrapper-single">
-                            <div class="product-wrapper mb-30">
-                                <div class="product-img">
-                                    <a href="">
-                                        <img alt=""
-                                            src="https://5.imimg.com/data5/OP/KB/OB/SELLER-2327178/waghbakri-premium-leaf-tea.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="ion-android-favorite-outline"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="ion-ios-shuffle-strong"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal"
-                                            data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-ios-search-strong"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-left">
-                                    <div class="product-hover-style">
-                                        <div class="product-title">
-                                            <h4>
-                                                <a href="">BeBe Bloom tea</a>
-                                            </h4>
-                                        </div>
-                                        <div class="cart-hover">
-                                            <h4><a href="">+ Add to cart</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00 -</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper mb-30">
-                                <div class="product-img">
-                                    <a href="">
-                                        <img alt=""
-                                            src="https://5.imimg.com/data5/OP/KB/OB/SELLER-2327178/waghbakri-premium-leaf-tea.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="ion-android-favorite-outline"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="ion-ios-shuffle-strong"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal"
-                                            data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-ios-search-strong"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-left">
-                                    <div class="product-hover-style">
-                                        <div class="product-title">
-                                            <h4>
-                                                <a href="">BeBe Bloom tea</a>
-                                            </h4>
-                                        </div>
-                                        <div class="cart-hover">
-                                            <h4><a href="">+ Add to cart</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00 -</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-wrapper-single">
-                            <div class="product-wrapper mb-30">
-                                <div class="product-img">
-                                    <a href="">
-                                        <img alt=""
-                                            src="https://5.imimg.com/data5/OP/KB/OB/SELLER-2327178/waghbakri-premium-leaf-tea.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="ion-android-favorite-outline"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="ion-ios-shuffle-strong"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal"
-                                            data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-ios-search-strong"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-left">
-                                    <div class="product-hover-style">
-                                        <div class="product-title">
-                                            <h4>
-                                                <a href="">BeBe Bloom tea</a>
-                                            </h4>
-                                        </div>
-                                        <div class="cart-hover">
-                                            <h4><a href="">+ Add to cart</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00 -</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper mb-30">
-                                <div class="product-img">
-                                    <a href="">
-                                        <img alt=""
-                                            src="https://5.imimg.com/data5/OP/KB/OB/SELLER-2327178/waghbakri-premium-leaf-tea.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="ion-android-favorite-outline"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="ion-ios-shuffle-strong"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal"
-                                            data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-ios-search-strong"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-left">
-                                    <div class="product-hover-style">
-                                        <div class="product-title">
-                                            <h4>
-                                                <a href="">BeBe Bloom tea</a>
-                                            </h4>
-                                        </div>
-                                        <div class="cart-hover">
-                                            <h4><a href="">+ Add to cart</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00 -</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-wrapper-single">
-                            <div class="product-wrapper mb-30">
-                                <div class="product-img">
-                                    <a href="">
-                                        <img alt=""
-                                            src="https://5.imimg.com/data5/OP/KB/OB/SELLER-2327178/waghbakri-premium-leaf-tea.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="ion-android-favorite-outline"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="ion-ios-shuffle-strong"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal"
-                                            data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-ios-search-strong"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-left">
-                                    <div class="product-hover-style">
-                                        <div class="product-title">
-                                            <h4>
-                                                <a href="">BeBe Bloom tea</a>
-                                            </h4>
-                                        </div>
-                                        <div class="cart-hover">
-                                            <h4><a href="">+ Add to cart</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00 -</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper mb-30">
-                                <div class="product-img">
-                                    <a href="">
-                                        <img alt=""
-                                            src="https://5.imimg.com/data5/OP/KB/OB/SELLER-2327178/waghbakri-premium-leaf-tea.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="ion-android-favorite-outline"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="ion-ios-shuffle-strong"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal"
-                                            data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-ios-search-strong"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-left">
-                                    <div class="product-hover-style">
-                                        <div class="product-title">
-                                            <h4>
-                                                <a href="">BeBe Bloom tea</a>
-                                            </h4>
-                                        </div>
-                                        <div class="cart-hover">
-                                            <h4><a href="">+ Add to cart</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00 -</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
+
+
+
         </div>
+
+        <div class="tab-content jump">
+            <div class="tab-pane active">
+                <div class="featured-product-active owl-carousel product-nav">
+                    <div class="product-wrapper-single">
+                        <div class="product-wrapper mb-30">
+                            <div class="product-img">
+                                <a href="">
+                                    <img alt=""
+                                        src="https://5.imimg.com/data5/OP/KB/OB/SELLER-2327178/waghbakri-premium-leaf-tea.jpg">
+                                </a>
+                                <span>-30%</span>
+                                <div class="product-action">
+                                    <a class="action-wishlist" href="#" title="Wishlist">
+                                        <i class="bi bi-heart"></i>
+                                    </a>
+                                    <a class="action-cart" href="#" title="Add To Cart">
+                                       <i class="bi bi-shuffle"></i>
+                                    </a>
+                                    <a class="action-compare" href="#" data-bs-target="#exampleModal"
+                                        data-bs-toggle="modal" title="Quick View">
+                                        <i class="bi bi-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content text-left">
+                                <div class="product-hover-style">
+                                    <div class="product-title">
+                                        <h4>
+                                            <a href="">Wagh Bakri Tea</a>
+                                        </h4>
+                                    </div>
+                                    <div class="cart-hover">
+                                        <h4><a href="">+ Add to cart</a></h4>
+                                    </div>
+                                </div>
+                                <div class="product-price-wrapper">
+                                    <span>$100.00 -</span>
+                                    <span class="product-price-old">$120.00 </span>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
     </div>
     <!-- New Products End -->
     <!-- Testimonial Area Start -->
@@ -1185,10 +1030,10 @@
                                     </ul>
                                 </div>
                                 <div class="footer-contact mt-20">
-                                    <ul>
-                                        <li>demo@example.com</li>
-                                        <li>demo@example.com</li>
-                                    </ul>
+                                 <a href="https://www.facebook.com/waghbakri"><i class="bi bi-facebook"></i></a>
+                                 <a href="https://twitter.com/waghbakri"><i class="bi bi-twitter"></i></a>
+                                 <a href="https://www.youtube.com/user/waghbakriofficial"><i class="bi bi-youtube"></i></a>
+                                 <a href="https://www.instagram.com/waghbakritea.official/"><i class="bi bi-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1324,25 +1169,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/v4-shims.min.js" integrity="sha512-1eyBIzeEcxyxJkTmQIGLrXo2AK9DVykziyPi7JkNR61HNC8y87OeqQFqvRwgwnqJpjxfUj43Fup0szvPrR3Ilg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                spaceBetween: 30,
-                centeredSlides: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-        </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
