@@ -481,8 +481,6 @@
             </div>
             <!-- <div class="swiper-slide"><img src="https://hdwallpaperim.com/wp-content/uploads/2017/08/27/137700-tea-748x421.jpg" alt=""></div> -->
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
     </div>
 
@@ -829,39 +827,78 @@
     <!-- New Products End -->
     <!-- Testimonial Area Start -->
 
+    <style>
+.testimonials-area p{
+    color: black;
 
-    <div class="testimonials-area bg-img pt-100 pb-100">
+}
+
+.testimonials-area h4{
+    color: black;
+}
+
+.testimonials-area h5{
+    color: black;
+}
+
+.testimonials-area .swiper{
+    height: 40vh;
+}
+
+@media (max-width: 767px) {
+    .testimonials-area  .swiper-slide p {
+        display: initial !important;
+        width: 80% !important;
+    }
+}
+
+
+    </style>
+
+    <div class="testimonials-area bg-img pb-5 pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-12">
-                    <div class="testimonial-active owl-carousel">
-                        <div class="single-testimonial text-center">
-                            <div class="testimonial-img">
-                                <img alt="" src="assets/img/icon-img/testi.png">
+                    <div style="background-color: #252423 !important;"  class="swiper mySwiper">
+                        <div style="background-color: #ED6F28 !important;" class="swiper-wrapper ">
+
+                           <div class="swiper-slide">
+                            <div class="single-testimonial text-center">
+
+                                <p >Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do
+                                    eiusmod tempor incididunt ut labore</p>
+                                <h4>Gregory Perkins</h4>
+                                <h5 >Customer</h5>
                             </div>
-                            <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do
-                                eiusmod tempor incididunt ut labore</p>
-                            <h4 style="color: white;">Gregory Perkins</h4>
-                            <h5 style="color:  white;">Customer</h5>
-                        </div>
-                        <div class="single-testimonial text-center">
-                            <div class="testimonial-img">
-                                <img alt="" src="assets/img/icon-img/testi.png">
-                            </div>
+                           </div>
+                           <div class="swiper-slide"> <div class="single-testimonial text-center">
+
                             <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt
                                 ut labore</p>
                             <h4>Khabuli Teop</h4>
                             <h5>Marketing</h5>
-                        </div>
-                        <div class="single-testimonial text-center">
-                            <div class="testimonial-img">
-                                <img alt="" src="assets/img/icon-img/testi.png">
-                            </div>
+                        </div></div>
+                           <div class="swiper-slide">   <div class="single-testimonial text-center">
+
                             <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt
                                 ut labore </p>
                             <h4>Lotan Jopon</h4>
                             <h5>Admin</h5>
+                        </div></div>
+
                         </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+
+                    <div class="testimonial-active owl-carousel">
+
+
+
+
+
+
                     </div>
                 </div>
             </div>
